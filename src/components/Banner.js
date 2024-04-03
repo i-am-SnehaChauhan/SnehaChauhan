@@ -47,6 +47,9 @@ export const Banner = () => {
     }
   }
 
+  const connect = () => {
+     window.open("https://linktr.ee/SnehaChauhan", "target=_blank");
+  }
   return (
     <section className="banner" id="home">
       <Container>
@@ -56,9 +59,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>{`Hi! I'm Sneha Chauhan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "B.Tech CSE Student @IGDTUW" ,"Web Developer", "Web Designer", "Open Source Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>I'm a third-year B.Tech student at IGDTUW, majoring in Computer Science, with a keen interest in software development and leadership. My expertise lies in web development, specializing in ReactJs and NodeJs, where I focus on creating intuitive interfaces and robust backend systems. Alongside, I'm well-versed in Data Structures, Algorithms, and Object-Oriented Programming, providing a strong foundation for my projects. Committed to continuous learning, I stay updated with industry trends. Outside of coding, I enjoy reading, staying active, and spending time with friends.</p>
+                  <button onClick={connect}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
