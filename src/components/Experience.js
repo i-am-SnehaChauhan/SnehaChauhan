@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../assets/CSS/Experience.module.css";
 import skills from "../data/skills.json";
 import history from "../data/history.json";
+import colorSharp from "../assets/img/color-sharp2.png";
 
 
 export const Experience = () => {
@@ -44,6 +45,7 @@ export const Experience = () => {
           })}
         </ul>
       </div>
+      <img className="background-image-left" src={colorSharp} />
     </section>
   );
 };
