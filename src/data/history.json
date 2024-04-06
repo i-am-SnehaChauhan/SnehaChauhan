@@ -1,0 +1,19 @@
+[
+  {
+    "role": "Research Intern",
+    "organisation": "Indira Gandhi Delhi Technical University for Women",
+    "startDate": "May, 2023",
+    "endDate": "July, 2023",
+    "experiences": ["Created a MERN stack E-commerce solution exclusively for dairy management needs."
+    , "Utilized industry research to inform the development process."],
+    "imageSrc": "https://res.cloudinary.com/dx0dgujbj/image/upload/v1712379751/Portfolio/History/igdtuw_logo_atsdaj.png"
+  },
+  {
+    "role": "Frontend Developer",
+    "organisation": "AssetMerkle IGDTUW",
+    "startDate": "March, 2023",
+    "endDate": "April, 2023",
+    "experiences": ["Developed the Front-end of a Web application using ReactJs", "Designed the Team Page and the Home Page of the website."],
+    "imageSrc": "https://res.cloudinary.com/dx0dgujbj/image/upload/v1712380755/Portfolio/History/asset_mantle_igdtuw_logo_pxbwa2.jpg"
+  }
+]
