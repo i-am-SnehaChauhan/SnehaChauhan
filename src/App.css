@@ -422,6 +422,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  transition: 0.5s ease-in-out;
+  height: 20rem;
 }
 .proj-imgbx::before {
   content: "";
@@ -461,9 +463,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   letter-spacing: 0.8px;
 }
+.proj-icon a {
+  margin: 0 10px; /* Adjust the gap between icons */
+}
+.proj-icon .icon {
+  color: #fff; /* Adjust the color here */
+}
+.proj-icon .icon:hover {
+  color: #000080; /* Adjust the hover color here */
+} 
 
 .proj-icon{
   display: flex;
+  justify-content: center;
+  font-size: 34px; 
+ color: "#333";
 }
 .background-image-right {
   top: 20%;
