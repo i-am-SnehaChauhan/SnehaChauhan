@@ -10,7 +10,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const webprojects = [
     {
       title: "Pryde",
       description: "A safe and inclusive space designed for the LGBTQ+ community to learn and talk about sexual health",
@@ -62,6 +62,18 @@ export const Projects = () => {
     },
   ];
 
+  const uiuxprojects = [
+    {
+      title: "Celestify",
+      description: "Modified the Spotify UI to Celestify the experience for the users",
+      imgUrl: "https://res.cloudinary.com/dx0dgujbj/image/upload/v1712387196/Portfolio/Projects/Screenshot_2024-04-06_123611_lc7kqu.png",
+      projectUrl: "https://www.figma.com/file/MQH86RFVC1lGG09ZCaFDWT/Normid-2023--WeGoGirls-team-library?type=design&node-id=0%3A1&mode=design&t=yaOnHq8wIV21vrv6-1",
+      githubUrl: "",
+      documentationUrl: ""
+    },  
+    
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -88,7 +100,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          webprojects.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -99,11 +111,22 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {
+                          uiuxprojects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p> */}
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
